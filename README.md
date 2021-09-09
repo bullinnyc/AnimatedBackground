@@ -1,4 +1,4 @@
-# AnimatedBackground
+# Animated Background
 SwiftUI. A beautiful animation background.
 
 ![](./SimulatorScreenRecording.gif)

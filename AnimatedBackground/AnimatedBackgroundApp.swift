@@ -12,7 +12,7 @@ import SwiftUI
 struct AnimatedBackgroundApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            AnimatedBackgroundView()
         }
     }
 }

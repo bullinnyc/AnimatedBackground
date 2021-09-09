@@ -8,18 +8,20 @@
 
 /* Begin PBXBuildFile section */
 		DBF72B2C26E9EF2C006547A6 /* AnimatedBackgroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF72B2B26E9EF2C006547A6 /* AnimatedBackgroundApp.swift */; };
-		DBF72B2E26E9EF2C006547A6 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF72B2D26E9EF2C006547A6 /* ContentView.swift */; };
+		DBF72B2E26E9EF2C006547A6 /* AnimatedBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF72B2D26E9EF2C006547A6 /* AnimatedBackgroundView.swift */; };
 		DBF72B3026E9EF2E006547A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBF72B2F26E9EF2E006547A6 /* Assets.xcassets */; };
 		DBF72B3326E9EF2E006547A6 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBF72B3226E9EF2E006547A6 /* Preview Assets.xcassets */; };
+		DBF72B3B26E9EF82006547A6 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = DBF72B3A26E9EF82006547A6 /* .gitignore */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		DBF72B2826E9EF2C006547A6 /* AnimatedBackground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimatedBackground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF72B2B26E9EF2C006547A6 /* AnimatedBackgroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedBackgroundApp.swift; sourceTree = "<group>"; };
-		DBF72B2D26E9EF2C006547A6 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		DBF72B2D26E9EF2C006547A6 /* AnimatedBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedBackgroundView.swift; sourceTree = "<group>"; };
 		DBF72B2F26E9EF2E006547A6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		DBF72B3226E9EF2E006547A6 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		DBF72B3426E9EF2E006547A6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DBF72B3A26E9EF82006547A6 /* .gitignore */ = {isa = PBXFileReference; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -36,6 +38,7 @@
 		DBF72B1F26E9EF2C006547A6 = {
 			isa = PBXGroup;
 			children = (
+				DBF72B3A26E9EF82006547A6 /* .gitignore */,
 				DBF72B2A26E9EF2C006547A6 /* AnimatedBackground */,
 				DBF72B2926E9EF2C006547A6 /* Products */,
 			);
@@ -53,7 +56,7 @@
 			isa = PBXGroup;
 			children = (
 				DBF72B2B26E9EF2C006547A6 /* AnimatedBackgroundApp.swift */,
-				DBF72B2D26E9EF2C006547A6 /* ContentView.swift */,
+				DBF72B2D26E9EF2C006547A6 /* AnimatedBackgroundView.swift */,
 				DBF72B2F26E9EF2E006547A6 /* Assets.xcassets */,
 				DBF72B3426E9EF2E006547A6 /* Info.plist */,
 				DBF72B3126E9EF2E006547A6 /* Preview Content */,
@@ -127,6 +130,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DBF72B3326E9EF2E006547A6 /* Preview Assets.xcassets in Resources */,
+				DBF72B3B26E9EF82006547A6 /* .gitignore in Resources */,
 				DBF72B3026E9EF2E006547A6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -138,7 +142,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				DBF72B2E26E9EF2C006547A6 /* ContentView.swift in Sources */,
+				DBF72B2E26E9EF2C006547A6 /* AnimatedBackgroundView.swift in Sources */,
 				DBF72B2C26E9EF2C006547A6 /* AnimatedBackgroundApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

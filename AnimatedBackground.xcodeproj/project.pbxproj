@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		DB92338E26EC4AF400FE3E7D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB92338D26EC4AF400FE3E7D /* ContentView.swift */; };
 		DBF72B2C26E9EF2C006547A6 /* AnimatedBackgroundApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF72B2B26E9EF2C006547A6 /* AnimatedBackgroundApp.swift */; };
 		DBF72B2E26E9EF2C006547A6 /* AnimatedBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBF72B2D26E9EF2C006547A6 /* AnimatedBackgroundView.swift */; };
 		DBF72B3026E9EF2E006547A6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DBF72B2F26E9EF2E006547A6 /* Assets.xcassets */; };
@@ -15,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		DB92338D26EC4AF400FE3E7D /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		DBF72B2826E9EF2C006547A6 /* AnimatedBackground.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AnimatedBackground.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DBF72B2B26E9EF2C006547A6 /* AnimatedBackgroundApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedBackgroundApp.swift; sourceTree = "<group>"; };
 		DBF72B2D26E9EF2C006547A6 /* AnimatedBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimatedBackgroundView.swift; sourceTree = "<group>"; };
@@ -56,6 +58,7 @@
 			isa = PBXGroup;
 			children = (
 				DBF72B2B26E9EF2C006547A6 /* AnimatedBackgroundApp.swift */,
+				DB92338D26EC4AF400FE3E7D /* ContentView.swift */,
 				DBF72B2D26E9EF2C006547A6 /* AnimatedBackgroundView.swift */,
 				DBF72B2F26E9EF2E006547A6 /* Assets.xcassets */,
 				DBF72B3426E9EF2E006547A6 /* Info.plist */,
@@ -144,6 +147,7 @@
 			files = (
 				DBF72B2E26E9EF2C006547A6 /* AnimatedBackgroundView.swift in Sources */,
 				DBF72B2C26E9EF2C006547A6 /* AnimatedBackgroundApp.swift in Sources */,
+				DB92338E26EC4AF400FE3E7D /* ContentView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,8 +12,7 @@ import SwiftUI
 struct AnimatedBackgroundApp: App {
     var body: some Scene {
         WindowGroup {
-            AnimatedBackgroundView(blurRadius: 20)
-                .ignoresSafeArea()
+            ContentView()
         }
     }
 }

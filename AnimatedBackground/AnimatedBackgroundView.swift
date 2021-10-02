@@ -10,49 +10,35 @@ import SwiftUI
 
 struct AnimatedBackgroundView: View {
     // MARK: - Property Wrappers
-    @State private var start = UnitPoint(x: 0, y: -2)
-    @State private var end = UnitPoint(x: 4, y: 0)
     @State private var startAnimation = false
-    @State private var timerCounter = 0
     
     // MARK: - Public Properties
     var blurRadius: CGFloat = 0
     var blurOpaque = false
     
     // MARK: - Private Properties
-    private let timer = Timer.publish(every: 0.01, on: .main, in: .common)
-        .autoconnect()
     private let colors = [
         Color("BlueSet"), Color("RedSet"), Color("VioletSet"), Color("PinkSet")
     ]
     
     // MARK: - body Property
     var body: some View {
-        LinearGradient(
-            gradient: Gradient(colors: colors),
-            startPoint: start,
-            endPoint: end
-        )
-        .blur(radius: blurRadius, opaque: blurOpaque)
-        .animation(
-            startAnimation
-                ? .easeInOut(duration: 6).repeatForever()
-                : nil
-        )
-        .onAppear {
-            DispatchQueue.global().async {
-                startAnimation = true
-            }
+        ZStack {
+            LinearGradient(
+                gradient: Gradient(colors: colors),
+                startPoint: startAnimation ? UnitPoint(x: 4, y: 0) : UnitPoint(x: 0, y: -2),
+                endPoint: startAnimation ? UnitPoint(x: 0, y: 2) : UnitPoint(x: 4, y: 0)
+            )
+                .blur(radius: blurRadius, opaque: blurOpaque)
+                .animation(
+                    .easeInOut(duration: 6).repeatForever(),
+                    value: startAnimation
+                )
         }
-        .onReceive(timer) { _ in
-            if timerCounter == 1 {
-                timer.upstream.connect().cancel()
-                startAnimation = false
-                return
+        .onAppear {
+            DispatchQueue.main.async {
+                startAnimation.toggle()
             }
-            start = UnitPoint(x: 4, y: 0)
-            end = UnitPoint(x: 0, y: 2)
-            timerCounter += 1
         }
     }
 }
